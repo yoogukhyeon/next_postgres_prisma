@@ -52,4 +52,7 @@ npx prisma studio
 prisma CLI
 npx prisma generate
 
+prisma 마이그레이션
+npx prisma migrate dev
+
 https://www.youtube.com/watch?v=AOnqLNzbOUk
