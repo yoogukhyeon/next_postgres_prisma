@@ -1,5 +1,6 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 
 export default function Home() {
-	return <div>home</div>;
+	return <div className="text-4xl">홈</div>;
 }

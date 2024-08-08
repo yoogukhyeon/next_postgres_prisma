@@ -51,3 +51,5 @@ npx prisma studio
 
 prisma CLI
 npx prisma generate
+
+https://www.youtube.com/watch?v=AOnqLNzbOUk

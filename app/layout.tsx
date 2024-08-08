@@ -1,12 +1,19 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Header from './common/header';
+import Footer from './common/footer';
+import Head from './head';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'home',
-	description: 'home 화면',
+	title: {
+		default: '랜딩페이지',
+		template: '%s | 랜딩페이지',
+	},
+	description: '광고 랜딩페이지',
+	keywords: ['hi', 'hello'],
 };
 
 export default function RootLayout({
@@ -16,7 +23,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ko">
-			<body className={inter.className}>{children}</body>
+			{/* <Head /> */}
+			<body className={inter.className}>
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
